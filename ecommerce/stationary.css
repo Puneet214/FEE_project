@@ -1,0 +1,18 @@
+header {
+    
+    background-image: url('ecomlogo.jpeg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:400px;
+    position:relative;
+}
+.header h1{
+    
+    font-weight:700;
+    color:brown;
+    text-align:center;
+  
+    
+    
+}

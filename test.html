@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Text</title>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hover-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-container:hover .hover-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="your-image.jpg" alt="Sample Image" style="width:100%;">
+    <div class="hover-text">This is the text that appears when you hover over the image</div>
+</div>
+
+</body>
+</html>

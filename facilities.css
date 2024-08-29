@@ -1,0 +1,22 @@
+.card_content:hover{
+    opacity: 0;
+    transform: rotatey(180deg);
+    transition-duration: 1s;
+}
+.facility_item{
+    position: relative;
+}
+.flip{
+    object-fit: cover;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    opacity: 0;
+}
+.flip:hover{
+    opacity: 1;
+    transform: rotatey(180deg);
+    transition-duration: 1s;
+}
