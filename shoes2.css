@@ -1,0 +1,50 @@
+.header {
+    
+    background-image: url('ecomlogo.jpeg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:400px;
+    position:relative;
+    
+
+  }
+.header h1{
+    
+    font-weight:700;
+    color:brown;
+    text-align:center;
+}
+.book_item img{
+  width:40%;
+}
+.book_item img:hover{
+  opacity: 0.75;
+  width:60%;
+  transition-duration: 1s;
+}
+
+footer{
+  background-color: maroon;
+  color:white;
+}
+.book_item .hover_text{
+  opacity:0;
+  z-index: 0;
+}
+.hover_text:hover{
+  opacity: 1;
+}
+
+
+.line {
+    flex:0 1 100px;
+    border-top: 4px solid blue;
+  
+  }
+  .line-container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 20px 0;
+  }

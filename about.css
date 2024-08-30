@@ -1,0 +1,87 @@
+.header {
+    height: 700px;
+    width: 100%;
+    background-image: url('/images/OIP.jpeg');  /* Added closing quotation mark */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.header h1{
+    font-size:40px;
+    font-weight:700;
+    color:whitesmoke;
+    text-align:center;
+    position:relative;
+    top:550px;
+    
+}
+
+
+.navbar-nav{
+  display:flex;
+  flex-direction:row;
+  gap:15px;
+  
+}
+@media (max-width:992px)
+{
+  .navbar-nav{
+      flex-direction:column;
+      gap:10px;
+  }
+}
+#icon{
+  color:red;
+  
+}
+.navbar-brand{
+  font-weight:900;
+  display:flex;
+  align-items:center;
+  
+}
+.nav-link{
+  font-weight:700;
+  
+}
+
+#firsta{
+  height:150px;
+  width:150px;
+  border-radius: 80%;
+ 
+}  
+#firstb{
+  height:150px;
+  width:150px;
+  border-radius: 80%;
+ 
+}
+#firstc{
+  height:150px;
+  width:150px;
+  border-radius: 80%;
+ 
+}
+#firstd{
+height:150px;
+  width:150px;
+  border-radius: 80%;
+  margin-left:400px;
+  margin-top:-150px;
+
+
+}
+.icons {
+text-align: center;
+color:brown;
+font-size:30px;
+
+
+}
+#ico{
+border:1px solid black;
+border-radius:75%;
+padding:10px;
+background-color:beige;
+}
