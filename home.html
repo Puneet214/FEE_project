@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #content{
+            z-index:2;
+            position: absolute;
+            top:0;
+            width:100%;
+        }
+        .campus_img_item img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .campus_img_item:hover{
+            opacity: 75%;
+        }
+        .photo_video{
+            position: relative;
+            overflow: hidden;
+        }
+        .photo_video img{
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .video-overlay{
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+            opacity: 0;
+            position: absolute;
+            top:0;
+            left:0;
+            
+        }
+        .facilities_img_container{
+            gap:20;
+        }
+        .review_item{
+            background-color: rgba(255, 192, 203, 0.169);
+        }
+        .photo_video:hover img{
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .photo_video:hover video{
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out; 
+        }
+        .carousel-inner > .item > img{
+            object-fit: cover;
+            height: 100vh;
+            width: 100%;
+        }
+        nav{
+            margin-bottom: 0;
+        }
+        #ico i{
+             padding: 400;   
+        }
+    </style>
+</head>
+<body>
+    <div id="SimpleCarouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="bg.jpg" class="img-fluid opacity-50 position-relative">
+          </div>
+          <div class="item">
+            <img src="sildeshow_bg_1.jpg" class="d-block w-100 img-fluid opacity-50" alt="...">
+          </div>
+          <div class="item">
+            <img src="slideshow_bg_2.jpg" class="d-block w-100 img-fluid opacity-50" alt="...">
+          </div>
+        </div>
+        <a class="left carousel-control" href="#SimpleCarouselExample" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#SimpleCarouselExample" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+    <div id="content" class="pt-sm-5">
+    <nav class="navbar navbar navbar-expand-sm">
+        <div class="container-fluid">
+        <a class="navbar-header" href="#" style="font-size:x-large; color:black">
+            <img src="logo.jpg" width="50" height="50" class="rounded-circle">
+            Education
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="navbar-nav">
+            <a href="#" class="nav-item active nav-link">Home</a>
+            <a href="#" class="nav-item nav-link">About</a>
+            <a href="facilities.html" class="nav-item nav-link">Facilities</a>
+            <a href="#" class="nav-item nav-link">Blog</a>
+            <a href="#" class="nav-item nav-link">Contact</a>
+        </div>
+        </div>
+    </nav>
+    <div id="para" class="mt-sm-5 pb-sm-5">
+    <h1 class="display-3 text-center">Inspiring Minds, Transforming Lives</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium facere. Officiis dolores sapiente aut earum consectetur recusandae blanditiis illo?</p>
+    </div>
+    <div class="mt-sm-5 text-center">
+        <h6 class="display-6">Already a student??</h6>
+        <p class="h6">Click Here!!</p>
+        <button type="button" class="btn btn-outline-secondary btn-lg mt-sm-3">LogIn</button>
+    </div>
+    </div>
+    <div id="campus" class="mt-sm-5 pt-sm-5">
+    <h1 class="display-4 text-center">Our Global Campus</h1>
+    <p class="h6 text-center">(Achieving Excellence Together)</p>
+    <div class="row g-2 position-relative campus_img_container">
+        <div class="col-md-6 col-lg-4 campus_img_item">
+            <img src="campus1.jpg" class="img-fluid p-3">
+        </div>
+        <div class="col-md-6 col-lg-4 campus_img_item">
+            <img src="campus2.jpg" class="img-fluid p-3">
+        </div>  
+        <div class="col-md-6 col-lg-4 campus_img_item">
+            <img src="campus3.jpg" class="img-fluid p-3">
+        </div>
+    </div>
+    </div>
+    <div id="facilities" class="mt-sm-5 pt-sm-5">
+        <h1 class="display-4 text-center">Our Facilities</h1>
+        <p class="h6 text-center">(Lorem ipsum dolor sit amet.)</p>
+        <div class="row g-2 facilities_img_conatiner p-3">
+            <div class="card col-md-6 col-lg-4 position-relative facilities_img_item">
+                <div class="photo_video">
+                <img src="lib.jpg" class="card-img-top">
+                <video src="libvideo.mp4" class="video-overlay card-img-top" muted></video>
+                </div>
+                <div class="card-body">
+                    <p class="card-text h4">
+                        Library
+                    </p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint.</p>
+                </div>
+            </div>
+            <div class="card col-md-6 col-lg-4 position-relative facilities_img_item">
+                <div class="photo_video">
+                <img class="card-img-top" src="school_complex.jpg">
+                <video src="complex.mp4" class="video-overlay card-img-top" muted></video>
+                </div>
+                <div class="card-body">
+                    <p class="card-text h4">
+                        Sports Complex
+                    </p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint.</p>
+                </div>
+            </div>
+            <div class="card col-md-6 col-lg-4 position-relative facilities_img_item">
+                <div class="photo_video">
+                <img class="card-img-top" src="cafe.jpg">
+                <video class="video-overlay" src="cafe.mp4" muted></video>
+                </div>
+                <div class="card-body">
+                    <p class="card-text h4">
+                        Cafeteria
+                    </p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint.</p>
+                </div>
+            </div>
+        </div>
+        <script src="home.js"></script>
+    </div>
+    <div id="review" class="mt-sm-5 pt-sm-5">
+        <h1 class="display-4 text-center">What Our Student says</h1>
+        <p class="h6 text-center">(Lorem ipsum dolor sit amet consectetur.)</p>
+        <div class="row g-4 review_conatiner mt-sm-5 justify-content-center">
+            <div class="card col-sm-4 review_item m-5">
+                <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum maiores nobis neque repellendus consequuntur doloremque nam laborum eum iusto quisquam.</p>
+                <h5 class="card-title ml-5">Zernish Khan</h5>
+            </div>
+            <div class="card col-sm-4 review_item m-5">
+                <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum maiores nobis neque repellendus consequuntur doloremque nam laborum eum iusto quisquam.</p>
+                <h5 class="card-title ml-5">Hamza</h5>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center mt-sm-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h5  style="font-weight:bolder"class="text-uppercase">About Us</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempora eum perferendis, libero temporibus nulla porro laboriosam eius error quos?</p>
+        </div>
+        <div id="ico" class="col-md-12">
+          <a href="https://www.facebook.com/ChitkaraU/"><i class="fa fa-facebook-f p-3"></i></a>
+          <a  href="https://x.com/ChitkaraU"><i class="fa fa-twitter p-3"></i></a>
+         
+          <a href="https://www.instagram.com/chitkarau/reels/?hl=en" target="_blank"><i class="fa fa-instagram p-3"></i></a>
+          <a href ="https://in.linkedin.com/school/chitkara-university/" target="_blank"> <i class="fa fa-linkedin p-3"></i></a>
+        </div>
+        <div class="col-md-12">
+          <p>&copy; Made by XYZ All Right Reserved </p>
+        </div>
+      </div>
+    </div>
+  </footer> 
+    
+</body>
+</html>
