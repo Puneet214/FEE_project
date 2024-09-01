@@ -35,4 +35,25 @@ footer{
 .hover_text:hover{
   opacity: 1;
 }
+.card-image-container {
+  position: relative;
+  display: inline-block;
+}
 
+.heart-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  color: red;
+  padding: 5px;
+  }
+.card-image-container img {
+  display: block;
+  object-fit: cover;
+  height:300vh;
+}
+.footer_icons img{
+  width:5%;
+  border-radius: 100%;
+}

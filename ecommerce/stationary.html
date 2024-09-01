@@ -1,13 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,14 +55,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a style="color:white; font-weight: 900;" class="nav-link" href="#">HOME</a>
+              <a style="color:white; font-weight: 900;" class="nav-link" href="main.html">HOME</a>
             </li>
             <li class="nav-item dropdown">
               <a style="color:white; font-weight: 900;"class="nav-link dropdown-toggle" href="books.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 STUDY MATERIAL KIT
               </a>
               <div  class="dropdown-menu" aria-labelledby="navbarDropdown" style="column-count: 3;">
-                <a class="dropdown-item">NURSERY</a>
+                <a class="dropdown-item" href="books.html">NURSERY</a>
                 <a class="dropdown-item" href="">KG</a>
                 <a class="dropdown-item" href="">1st</a>
                 <a class="dropdown-item" href="">2nd</a>
@@ -87,7 +79,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a style="color:white; font-weight: 900;" class="nav-link" href="#">SHOES</a>
+              <a style="color:white; font-weight: 900;" class="nav-link" href="shoes1.html">SHOES</a>
             </li>
             <li class="nav-item dropdown">
               <a style="color:white; font-weight: 900;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -104,66 +96,255 @@
               <a style="color:white; font-weight: 900;" class="nav-link" href="#">NOTEBOOK</a>
             </li>
             <li class="nav-item">
-              <a style="color:yellow; font-weight:900;" class="nav-link" href="#">STATIONERY</a>
+              <a style="color:yellow; font-weight:900;" class="nav-link" href="stationary.html">STATIONERY</a>
             </li>
           </ul>
           
         </div>
       </nav>
-      <div id="main_content" class="row position-relative m-sm-3">
+      
+          <div id="main_content" class="row position-relative m-sm-3">
         <div id="haederspace" class="shadow p-3 mb-5 bg-white rounded">
-            <p class="fs-6">Stationary</p>
+            <p class="fs-6">Stationary Items</p>
         </div>
         <div id="filter" class="shadow p-3 mb-5 bg-white rounded col-sm-3">
             <p class="fs-5">Filter</p>
-            <p class="fs-6">Product Type=></p>
+            <hr>
+            <p>Product Type</p>
             <input type="search" placeholder="Search Here" style="border-radius: 5%;">
             <div id="class_container" class="p-3">
             <div class="class_item">
-            <input type="checkbox" name="class">Art and Craft
+            <input type="checkbox" name="class">Art&craft
             </div>
             <div class="class_item">
             <input type="checkbox" name="class">Bag
             </div>
             <div class="class_item">
-            <input type="checkbox" name="class">card
+              <input type="checkbox" name="class">Card
+              </div>
+            <div class="class_item">
+            <input type="checkbox" name="class">Color
             </div>
             <div class="class_item">
-            <input type="checkbox" name="class">color
+            <input type="checkbox" name="class">Cover
             </div>
             <div class="class_item">
-            <input type="checkbox" name="class">kit 
-            </div>
-            <div class="class_item">
-            <input type="checkbox" name="class">map
-            </div>
-            <div class="class_item">
-            <input type="checkbox" name="class">tools
+            <input type="checkbox" name="class">Dough
             </div>
             <div class="class_item">
             <input type="checkbox" name="class">Files and Folders
             </div>
             <div class="class_item">
-            <input type="checkbox" name="class">Pen and Pencil
+            <input type="checkbox" name="class">Kit
             </div>
             <div class="class_item">
-            <input type="checkbox" name="class">Stickers 
+            <input type="checkbox" name="class">Map 
             </div>
             <div class="class_item">
-            <input type="checkbox" name="class">Glitter Paper 
-            </div>
-            <div class="class_item">
-            <input type="checkbox" name="class">Educational
-            </div>
-            <div class="class_item">
-            <input type="checkbox" name="class">Drawing Book 
+            <input type="checkbox" name="class">Multipurpose Paper 
             </div>
             <div class="class_item">
             <input type="checkbox" name="class">Cleaning
             </div>
+            <div class="class_item">
+            <input type="checkbox" name="class">geometry 
             </div>
+            <div class="class_item">
+            <input type="checkbox" name="class">Highlighter 
+            </div>
+            <div class="class_item">
+            <input type="checkbox" name="class">scale
+            </div>
+            </div>
+            <hr>
+        </div>
+        <div id="Material" class="col-sm-9">
+          <h3 class="text-center"><---Stationary Items---></h3>
+            <div id="books_cards" class="row m-sm-3">
+              <div class="book_item card col-sm-4">
+                <div class="card-img-container">
+                <img class="card-img-top rounded mx-auto d-block item_image" src="sheets.jpg">
+                <span class="heart-icon">
+                  <i class="fas fa-cart-plus">
+                    </i>
+              </span>
+                </div>
+                <div class="card-body">
+                  <p class="text-center">A4-size sheets</p>
+                  <p class="text-center">&#8377;200</p>
+                  <div class="star-rating text-center">
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div> 
+              <div class="book_item card col-sm-4">
+                <div class="card-img-container">
+                <img class="card-img-top rounded mx-auto d-block item_image" src="map.jpeg">
+                <span class="heart-icon">
+                  <i class="fas fa-cart-plus">
+                    </i>
+              </span>
+                </div>
+                <div class="card-body">
+                  <p class="text-center">Map Book-India</p>
+                  <p class="text-center">&#8377;50</p>
+                  <div class="star-rating text-center">
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div> 
+              <div class="book_item card col-sm-4">
+                <div class="card-img-container">
+                <img class="card-img-top rounded mx-auto d-block item_image" src="map.jpeg">
+                <span class="heart-icon">
+                  <i class="fas fa-cart-plus">
+                    </i>
+              </span>
+                </div>
+                <div class="card-body">
+                  <p class="text-center">Map book-france</p>
+                  <p class="text-center">&#8377;60</p>
+                  <div class="star-rating text-center">
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div> 
+              <div class="book_item card col-sm-4">
+                <div class="card-img-container">
+                <img class="card-img-top rounded mx-auto d-block item_image" src="map.jpeg">
+                <span class="heart-icon">
+                  <i class="fas fa-cart-plus">
+                    </i>
+              </span>
+                </div>
+                <div class="card-body">
+                  <p class="text-center">Map-book World</p>
+                  <p class="text-center">&#8377;80</p>
+                  <div class="star-rating text-center">
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div> 
+              <div class="book_item card col-sm-4">
+                <div class="card-img-container">
+                <img class="card-img-top rounded mx-auto d-block item_image" src="pen.jpeg">
+                <span class="heart-icon">
+                  <i class="fas fa-cart-plus">
+                    </i>
+              </span>
+                </div>
+                <div class="card-body">
+                  <p class="text-center">Ball pen</p>
+                  <p class="text-center">&#8377;20</p>
+                  <div class="star-rating text-center">
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div> 
+              <div class="book_item card col-sm-4">
+                <div class="card-img-container">
+                <img class="card-img-top rounded mx-auto d-block item_image" src="pen.jpeg">
+                <span class="heart-icon">
+                  <i class="fas fa-cart-plus">
+                  </i>
+                </span>
+                </div>
+                <div class="card-body">
+                  <p class="text-center">Correction Pen</p>
+                  <p class="text-center">&#8377;30</p>
+                  <div class="star-rating text-center">
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div> 
+              <div class="book_item card col-sm-4">
+                <div class="card-img-container">
+                <img class="card-img-top rounded mx-auto d-block item_image" src="geometry.jpeg">
+                <span class="heart-icon">
+                  <i class="fas fa-cart-plus">
+                  </i>
+                </span>
+                </div>
+                <div class="card-body">
+                  <p class="text-center">Geometry Box</p>
+                  <p class="text-center">&#8377;100</p>
+                  <div class="star-rating text-center">
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div> 
+              <div class="book_item card col-sm-4">
+                <div class="card-img-container">
+                <img class="card-img-top rounded mx-auto d-block item_image" src="pen.jpeg">
+                <span class="heart-icon">
+                  <i class="fas fa-cart-plus">
+                  </i>
+                </span>
+                </div>
+                <div class="card-body">
+                  <p class="text-center">Marker</p>
+                  <p class="text-center">&#8377;90</p>
+                  <div class="star-rating text-center">
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star"></i>
+                    <i id="star" class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div>
+        <footer class="m-sm-3 text-center">
+          <p class="pt-sm-3">XYZ SCHOOLS</p>
+          <p class="pt-sm-4">1875 Greeley Street South, XYZ SCHOOL,5502</p>
+          <div class="row text-center pt-sm-1">
+          <P CLASS="col-sm-4">&#128222; Main Office:900-800-700-600</P>
+          <P CLASS="col-sm-4">&#9743; Fax:999-888-777-666</P>
+          <P CLASS="col-sm-4">&#x2709; Email us:abc@gmail.com</P>
+          </div>
+          <div class="row text-center pt-sm-1">
+            <p class="col-sm-6">&#x1F550;Student Hours:8:00AM-3:00PM</p>
+            <p class="col-sm-6">&#x1F550;Office Hours:11:00AM-4:00PM</p>
+          </div>
+          <div id="ico" class="col-md-12">
+            <a href="https://www.facebook.com/ChitkaraU/"><i class="fa fa-facebook-f p-3"></i></a>
+            <a  href="https://x.com/ChitkaraU"><i class="fa fa-twitter p-3"></i></a>
+           
+            <a href="https://www.instagram.com/chitkarau/reels/?hl=en" target="_blank"><i class="fa fa-instagram p-3"></i></a>
+            <a href ="https://in.linkedin.com/school/chitkara-university/" target="_blank"> <i class="fa fa-linkedin p-3"></i></a>
+          </div>
+        </footer>
+      </div>
+
     
-</body>
-</html>
 </body>
 </html>
