@@ -16,3 +16,34 @@ header {
     
     
 }
+.card-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  color: red;
+  padding: 5px;
+  }
+.card-image-container img {
+  display: block;
+  object-fit: cover;
+  height:300vh;
+}
+.item_image{
+  height:40vh;
+}
+footer{
+  background-color: maroon;
+  color:white;
+}
+.item_image:hover{
+  opacity: 0.75;
+  width:60%;
+  transition-duration: 1s;
+}
+
