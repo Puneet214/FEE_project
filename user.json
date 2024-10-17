@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "Prachi",
+      "email": "prachimnjl@gmail.com",
+      "password": "Prachi@123",
+      "id": "d513"
+    },
+    {
+      "username": "saniya",
+      "email": "saniya1203.be23@chitkara.edu.in",
+      "password": "Saniya@123",
+      "id": "aa43"
+    },
+    {
+      "id": "dac1",
+      "username": "Puneet",
+      "email": "puneet1184.be23@chitkara.edu.in",
+      "password": "Puneet@123"
+    },
+    {
+      "id": "2e49",
+      "username": "2410993380",
+      "email": "shriya0890.be23@chitkara.edu.in",
+      "password": "Prachi@123"
+    }
+  ]
+}
