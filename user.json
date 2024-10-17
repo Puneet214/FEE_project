@@ -7,7 +7,11 @@
       "id": "d513"
     },
     {
+<<<<<<< HEAD
       "username": "Saniya",
+=======
+      "username": "saniya",
+>>>>>>> 817812ef0781d1ce68dcbe2470a377d7368ca936
       "email": "saniya1203.be23@chitkara.edu.in",
       "password": "Saniya@123",
       "id": "aa43"
@@ -23,12 +27,15 @@
       "username": "2410993380",
       "email": "shriya0890.be23@chitkara.edu.in",
       "password": "Prachi@123"
+<<<<<<< HEAD
     },
     {
       "id": "7b15",
       "username": "ram",
       "email": "saniyagarg9@gmail.com",
       "password": "Hello@123"
+=======
+>>>>>>> 817812ef0781d1ce68dcbe2470a377d7368ca936
     }
   ]
 }

@@ -1,11 +1,13 @@
-header {
+.header {
     
-    background-image: url('ecomlogo.jpeg'); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:400px;
-    position:relative;
+  background-image: url('ecomlogo.jpeg'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:400px;
+  position:relative;
+  
+
 }
 .header h1{
     
@@ -45,5 +47,9 @@ footer{
   opacity: 0.75;
   width:60%;
   transition-duration: 1s;
+}
+.footer_icons img{
+  width:5%;
+  border-radius: 100%;
 }
 
