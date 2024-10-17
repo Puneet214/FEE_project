@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shoes</title>
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet">
 
@@ -16,7 +16,7 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             
             <div class="header me-5">
@@ -43,11 +43,15 @@
             </div>
         </div>
     </div>
-    
-    
-      
-      <i id="ico" class="fa-solid fa-cart-shopping me-3"></i>
-      <i id="ico"class="fa fa-address-book me-5" ></i>
+      <a href="cart.html">
+        <i id="ico" class="fa-solid fa-cart-shopping me-3" style="font-size:30px; position: relative;">
+          <span id="cart_amount" class="quantity-display">
+            <span class="badge rounded-circle">0</span>
+          </span>
+        </i>
+      </a>
+     
+      <i id="ico"class="fa fa-address-book me-5"style="font-size:30px;" ></i>
     </nav>
     
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
@@ -106,7 +110,7 @@
         </div>
       </nav>
       
-          <div id="main_content" class="row position-relative m-sm-3">
+        <div id="main_content" class="row position-relative m-sm-3">
         <div id="haederspace" class="shadow p-3 mb-5 bg-white rounded">
             <p class="fs-6">Study Material Kit</p>
         </div>
@@ -180,425 +184,19 @@
             </div>
             <hr>
         </div>
-        <div id="Material" class="col-sm-9">
-          <div class="line-container">
+         <div id="Material" class="col-sm-9  card-deck">
+          
+          
+          <div class="line-container ">
             <div class="line"></div>
             <span class="text ">SHOES</span>
-            <div class="line"></div>
-        </div>
-            <div id="books_cards" class="row m-sm-3">
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-                </span>
-                <div class="card-body">
-                  <p class="text-center">Liberty Black School Lacing</p>
-                  <p class="text-center">&#8377;5000</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h5 class="modal-title" id="signupModalLabel">Please Register First</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-                          <div class="modal-body">
-                              <form>
-                                  <div class="form-group">
-                                      <label for="username">Username</label>
-                                      <input type="text" class="form-control" id="username" placeholder="Enter your username">
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="email">Email address</label>
-                                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="contactno">ContactNo:</label>
-                                      <input type="tel" class="form-control" id="contactno" placeholder="Enter your ContactNO">
-                                  </div>
-                                  <button type="submit" class="btn btn-primary">Already Registered/Sign In</button>
-                              </form>
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-                
-               
-
-                
-                </div>
-                
-                   
-              </div>
-              
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Liberty Black School Lacing</p>
-                  <p class="text-center">&#8377;5400</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <h5 class="modal-title" id="signupModalLabel">Please Register First</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                  </button>
-                              </div>
-                              <div class="modal-body">
-                                  <form>
-                                      <div class="form-group">
-                                          <label for="username">Username</label>
-                                          <input type="text" class="form-control" id="username" placeholder="Enter your username">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="email">Email address</label>
-                                          <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="contactno">ContactNo:</label>
-                                          <input type="tel" class="form-control" id="contactno" placeholder="Enter your ContactNO">
-                                      </div>
-                                      <button type="submit" class="btn btn-primary">Already Registered/Sign In</button>
-                                  </form>
-                              </div>
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Liberty Black School Lacing</p>
-                  <p class="text-center">&#8377;5100</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Liberty Black School Lacing</p>
-                  <p class="text-center">&#8377;6000</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Liberty Black School Lacing</p>
-                  <p class="text-center">&#8377;5800</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Liberty Black School Lacing</p>
-                  <p class="text-center">&#8377;6000</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Liberty Black School Lacing</p>
-                  <p class="text-center">&#8377;6300</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Liberty Black School Lacing</p>
-                  <p class="text-center">&#8377;5000</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Liberty Black School Lacing</p>
-                  <p class="text-center">&#8377;5200</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Amritsar Study Material class-8</p>
-                  <p class="text-center">&#8377;5800</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Noida Study Material class-8</p>
-                  <p class="text-center">&#8377;5800</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Noida Study Material class-12</p>
-                  <p class="text-center">&#8377;6500</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Noida Study Material class-1</p>
-                  
-                  <p class="text-center">&#8377;5000</p>
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
-              <div class="book_item card col-sm-4">
-                <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp">
-                <span class="heart-icon">
-                  <a href="product.html" target="_blank">
-                    <i class="fas fa-cart-plus"></i>
-                </a>
-              </span>
-                <div class="card-body">
-                  <p class="text-center">Noida Study Material class-10</p>
-                  
-                  <p class="text-center">&#8377;5900</p>
-    
-                  <div class="star-rating">
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star"></i>
-                    <i id="star" class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                      click here
-                  </button>
-                </div>
-                </div>
-              </div> 
+            <div class="line "></div>
+          </div>
+            <div id="books_cards  " class="row m-sm-3  js-products-grid">
             </div>
         </div>
+        
+        
         <footer class="m-sm-3 text-center">
           <p class="pt-sm-3">XYZ SCHOOLS</p>
           <p class="pt-sm-4">1875 Greeley Street South, XYZ SCHOOL,5502</p>
@@ -621,6 +219,9 @@
         </footer>
         
       </div>
+      <script src="data.js"></script>
+      <script src="/script/shoes.js"></script>
+    
     
     
 </body>

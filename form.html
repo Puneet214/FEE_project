@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="sendEmail(); reset(); return false;"> 
+        <div  style=" border-radius:12px; background-color: rgba(0, 119, 255, 0.252);" class="container">
+          <div class="form-group">
+            <h5 style="text-align:center ; font-weight: 900; color:white; font-size:50px;">Any Product Related Issue</h5>
+            <img class="img" src="/images/images (1).jpg" alt="">
+            <h4 style="color:white; text-align:center; font-weight:900;">Do you have any complaint?</h4>
+            <br>
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label for="firstName" style="color: white; font-weight: 900;">First Name</label>
+                <input type="text" class="form-control" id="firstName">
+              </div>
+              <div class="col-md-6 form-group">
+                <label for="lastName" style="color: white; font-weight:900;">Last Name</label>
+                <input type="text" class="form-control" id="lastName">
+              </div>
+            </div>
+            
+            <label for="exampleFormControlInput1" style="color: white; font-weight: 900;">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="Rollno" style="color: white; font-weight: 900;">Roll No</label>
+            <input type="text" class="form-control" id="rollNo" placeholder="23101234">
+            <label for="complaintDate" style="color:white; font-weight:900;">Date of Complaint</label>
+            <input type="date" class="form-control" id="complaintDate">
+          </div>
+          
+          <div class="form-group  ">
+            <label for="exampleFormControlTextarea1" style="color:white; font-weight:900;">Problem Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn-custom">Submit</button>
+          </div>
+         
+        </div>
+      </form>
+      
+      
+      
+      
+       <script src="Include a script tag to https://smtpjs.com/v3/smtp.js"></script> 
+       <script>
+        function  sendEmail()
+        {
+          Email.send({
+          Host : "smtp.gmail.com",
+          Username : "saniyagarg9@gmail.com",
+          Password : "password",
+          To : 'saniya1203.be23@chitkara.edu.in',
+          From : document.getElementById("email").value,
+          Subject : "New contact form query",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+        }
+       </script>
+</body>
+</html>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>website</title>
+
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet">
 
@@ -83,7 +84,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a style="color:white; font-weight: 900;" class="nav-link" href="shoes1.html">SHOES</a>
+            <a style="color:white; font-weight: 900;" class="nav-link" href="/ecommerse/shoesfinal.html">SHOES</a>
           </li>
           <li class="nav-item dropdown">
             <a style="color:white; font-weight: 900;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -157,7 +158,7 @@
             <div class="card-body ">
               <h5 class="card-title">Shoes</h5>
             
-              <a href="#" class="btn btn-primary">BUY NOW</a>
+              <a href="/shoesfinal.html" class="btn btn-primary">BUY NOW</a>
             </div>
           </div>
           <div class="card" style="border: 1px solid black;">
@@ -308,11 +309,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
+<!-- <script src="/script/main.js">
     $('#videoModal').on('show.bs.modal', function (event) {
-        var button = $(event.relatedTarget) // Button that triggered the modal
-        var videoUrl = button.data('video') // Extract info from data-* attributes
-        var modal = $(this)
+        var button = $(event.relatedTarget) 
         modal.find('#videoPlayer').attr('src', videoUrl)
     })
 
@@ -320,8 +319,8 @@
         var modal = $(this)
         modal.find('#videoPlayer').attr('src', '')
     })
-</script>
-<form>
+</script> -->
+<form onsubmit="sendEmail(); reset(); return false;"> 
   <div  style=" border-radius:12px; background-color: rgba(0, 119, 255, 0.252);" class="container">
     <div class="form-group">
       <h5 style="text-align:center ; font-weight: 900; color:white; font-size:50px;">Any Product Related Issue</h5>
@@ -359,6 +358,25 @@
 </form>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+
+
+ <script src="Include a script tag to https://smtpjs.com/v3/smtp.js"></script> 
+ <script>
+  function  sendEmail()
+  {
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "saniyagarg9@gmail.com",
+    Password : "iitsaniyajss",
+    To : 'saniya1203.be23@chitkara.edu.in',
+    From : document.getElementById("email").value,
+    Subject : "New contact form query",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+  }
+ </script>
 </body>
+
 </html>

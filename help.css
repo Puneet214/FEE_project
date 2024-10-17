@@ -1,5 +1,6 @@
 .searchbar{
     width:50%;
+   
 }
 .searchbar:focus{
     outline: none;
