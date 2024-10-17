@@ -1,18 +1,18 @@
 // data.js
-let shopItemsData = [
+shopItemsData = [
     {
       "id": 1,
       "name": "Liberty Black Shoes Lacing",
       "price": 5,
       "rating": 87,
-      "img": "/images/shoes2.jpeg"
+      "img": "shoes2.jpeg"
     },
     {
       "id": 2,
       "name": "Liberty Black Shoes",
       "price": 3445,
       "rating": 89,
-      "img": "/images/shoes2.jpeg"
+      "img": "shoes2.jpeg"
     },
     {
       "id": 3,

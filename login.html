@@ -30,19 +30,11 @@
                     <form id="signup-form">
                         <label for="chk" aria-hidden="true">Sign up</label>
                         <div class="signup_input">
-<<<<<<< HEAD
-                            <input type="text" name="username" placeholder="User name" id="signup-username" required>
-                            <span id="signup-username-error" class="error"></span>
-                            <input type="email" name="email" placeholder="Email" id="signup-email" required>
-                            <span id="signup-email-error" class="error"></span>
-                            <input type="password" name="password" placeholder="Password" id="signup-password" required>
-=======
                             <input type="text" name="username" placeholder="User name" id="signup-username">
                             <span id="signup-username-error" class="error"></span>
                             <input type="email" name="email" placeholder="Email" id="signup-email">
                             <span id="signup-email-error" class="error"></span>
                             <input type="password" name="password" placeholder="Password" id="signup-password">
->>>>>>> 817812ef0781d1ce68dcbe2470a377d7368ca936
                             <span id="signup-password-error" class="error"></span>
                             <button type="submit">Sign Up</button>
                         </div>
@@ -52,15 +44,9 @@
                     <form id="login-form">
                         <label for="chk" aria-hidden="true">Login</label>
                         <div class="login_input">
-<<<<<<< HEAD
-                            <input type="text" name="username" placeholder="Username" id="login-username" required>
-                            <span id="login-username-error" class="error"></span>
-                            <input type="password" name="password" placeholder="Password" id="login-password" required>
-=======
                             <input type="text" name="username" placeholder="Username" id="login-username">
                             <span id="login-username-error" class="error"></span>
                             <input type="password" name="password" placeholder="Password" id="login-password">
->>>>>>> 817812ef0781d1ce68dcbe2470a377d7368ca936
                             <span id="login-password-error" class="error"></span>
                             <button type="submit">Login</button>
                         </div>
@@ -77,104 +63,6 @@
 <script src="login.js"></script>
 <script>
     // Function to validate password strength
-<<<<<<< HEAD
-    function isStrongPassword(password) {
-        const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/;
-        return passwordPattern.test(password);
-    }
-
-    // Handle Sign Up
-    document.getElementById('signup-form').addEventListener('submit', async function(event) {
-        event.preventDefault();
-
-        const username = document.getElementById('signup-username').value.trim();
-        const email = document.getElementById('signup-email').value.trim();
-        const password = document.getElementById('signup-password').value.trim();
-
-        // Clear previous error messages
-        document.getElementById('signup-username-error').textContent = '';
-        document.getElementById('signup-email-error').textContent = '';
-        document.getElementById('signup-password-error').textContent = '';
-
-        // Validate form
-        let isValid = true;
-
-        if (username === '') {
-            document.getElementById('signup-username-error').textContent = 'Username is required.';
-            isValid = false;
-        } else if (username.length < 3) {
-            document.getElementById('signup-username-error').textContent = 'Username must be at least 3 characters long.';
-            isValid = false;
-        }
-
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (email === '') {
-            document.getElementById('signup-email-error').textContent = 'Email is required.';
-            isValid = false;
-        } else if (!emailPattern.test(email)) {
-            document.getElementById('signup-email-error').textContent = 'Enter a valid email address.';
-            isValid = false;
-        }
-
-        if (!isStrongPassword(password)) {
-            document.getElementById('signup-password-error').textContent = 'Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character.';
-            isValid = false;
-        }
-
-        if (isValid) {
-            const user = { username, email, password };
-
-            try {
-                const response = await fetch('http://localhost:3000/users', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(user)
-                });
-
-                if (response.ok) {
-                    alert('User signed up successfully');
-                } else {
-                    const errorData = await response.json();
-                    document.getElementById('signup-username-error').textContent = `Error: ${errorData.message}`;
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                document.getElementById('signup-username-error').textContent = 'Error signing up';
-            }
-        }
-    });
-
-    // Handle Login
-    document.getElementById('login-form').addEventListener('submit', async function(event) {
-        event.preventDefault();
-
-        const username = document.getElementById('login-username').value.trim();
-        const password = document.getElementById('login-password').value.trim();
-
-        // Clear previous error messages
-        document.getElementById('login-username-error').textContent = '';
-        document.getElementById('login-password-error').textContent = '';
-
-        try {
-            // Fetch users from json-server
-            const response = await fetch(`http://localhost:3000/users?username=${username}&password=${password}`);
-            const users = await response.json();
-
-            // Check if any user was found with the provided credentials
-            if (users.length > 0) {
-                alert('Login successful');
-                window.location.href = 'ecommerce/main.html';
-            } else {
-                document.getElementById('login-username-error').textContent = 'Invalid username or password';
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            document.getElementById('login-username-error').textContent = 'Error logging in';
-        }
-    });
-=======
 function isStrongPassword(password) {
     const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     return passwordPattern.test(password);
@@ -283,7 +171,7 @@ document.getElementById('login-form').addEventListener('submit', async function(
 
         if (users.length > 0) {
             alert('Login successful');
-            window.location.href = 'ecommerce/main.html';
+            window.location.href = 'main.html';
         } else {
             document.getElementById('login-username-error').textContent = 'Invalid username or password';
         }
@@ -293,7 +181,6 @@ document.getElementById('login-form').addEventListener('submit', async function(
     }
 });
 
->>>>>>> 817812ef0781d1ce68dcbe2470a377d7368ca936
 </script>
 </body>
 </html>

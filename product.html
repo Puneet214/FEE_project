@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="product.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="height:550px;">
+                    <img class="card-img-top rounded mx-auto d-block" src="/images/shoes1.webp" alt="Shoes 1">
+                    
+                </div>
+            </div> 
+            <div class="col-md-5 mb-4" >
+                <div class="card" style=" height:550px;">
+                    <h3 >Liberty Black School Shoes </h3>
+                    <h5>SKU NO:681110</h5>
+                    <div class="star-rating">
+                        <i id="star" class="fas fa-star"></i>
+                        <i id="star" class="fas fa-star"></i>
+                        <i id="star" class="fas fa-star"></i>
+                        <i id="star" class="fas fa-star"></i>
+                        <i id="star" class="fas fa-star-half-alt"></i>
+                        (0)
+                      </div>
+                      <p >&#8377;<b style="font-size:20px;">5000</b> MRP(all taxes inclusive)</p>
+                    
+                      <div class="container mt-4">
+                        <p>Shoes Sizes:</p>
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="size">8c</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="size">9c</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="size">10c</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="size">11c</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="size">12c</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="size">13c</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="size">14C</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="size">12C</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="size">13C</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="size">14C</div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                      <div class="container mt-5 pb-5">
+                        <p style="font-size:20px; font-weight:500px;">Quantity</p>
+                          <div class="row">
+                              <div class="col-md-4 mb-3">
+                                  <div class="qty-container">
+                                      <button class="qty-btn-minus btn-light" type="button"><i class="fa fa-minus"></i></button>
+                                      <input type="text" name="qty" value="0" class="input-qty"/>
+                                      <button class="qty-btn-plus btn-light" type="button"><i class="fa fa-plus"></i></button>
+                                  </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+                  
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="line-container">
+                        <div class="line"></div>
+                        <span class="text ">Product Specification</span>
+                        <div class="line"></div>   
+                </div>
+                <div class="details">
+                    <div class="label">Color:</div>
+                    <div class="value">Black</div>
+            
+                    <div class="label">Size:</div>
+                    <div class="value">10</div>
+            
+                    <div class="label">Gender:</div>
+                    <div class="value">Unisex</div>
+            
+                    <div class="label">Fasting:</div>
+                    <div class="value">Lace-Ups</div>
+            
+                    <div class="label">Upper Material:</div>
+                    <div class="value">PVC CFB</div>
+            
+                    <div class="label">Sole Material:</div>
+                    <div class="value">PVC</div>
+            
+                    <div class="label">Brand:</div>
+                    <div class="value">Liberty Force 10</div>
+                </div>
+                <hr>
+                <div class="ico">
+                    <i id="icons" class="fas fa-shipping-fast" style="color:red; font-size:30px;"></i> 
+                    <p>Fast Shipping</p>
+                    
+
+                </div>
+                <hr>
+                <div class="ico" >
+                    <i class="fas fa-arrow-left arrow" title="Backward" id="icons"></i>
+                    
+                    <p>Easy To Return</p>
+                    
+
+                </div>        
+            </div>
+        </div>
+    </div>
+    <script>
+        var buttonPlus  = $(".qty-btn-plus");
+var buttonMinus = $(".qty-btn-minus");
+
+var incrementPlus = buttonPlus.click(function() {
+  var $n = $(this)
+  .parent(".qty-container")
+  .find(".input-qty");
+  $n.val(Number($n.val())+1 );
+});
+
+var incrementMinus = buttonMinus.click(function() {
+  var $n = $(this)
+  .parent(".qty-container")
+  .find(".input-qty");
+  var amount = Number($n.val());
+  if (amount > 0) {
+    $n.val(amount-1);
+  }
+});
+    </script>
+</body>
+</html>

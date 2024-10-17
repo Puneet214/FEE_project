@@ -33,7 +33,7 @@ let generateFilterOptions = () => {
     materialGrid.innerHTML = shopItemsData.map((x) => {
       return `
         <div class="book_item card col-sm-4">
-          <img class="card-img-top rounded mx-auto d-block" src="${x.img}" alt="${x.name}">
+        <img class="card-img-top rounded mx-auto d-block" src="shoes2.jpeg" alt="${x.name}">
           <span class="heart-icon">
             <a href="product.html" target="_blank">
               <i class="fas fa-cart-plus"></i>
