@@ -58,7 +58,28 @@ let generateFilterOptions = () => {
   
   let add_to_cart=(id,name,price,img)=>
   {
-    basket.push(
+  //   basket.push(
+  //     {
+  //       id:id,
+  //       item:1,
+  //       name:name,
+  //       price:price,
+  //       img:img
+  //     }
+  //   )
+  //   console.log(basket);
+  //  localStorage.setItem('data',JSON.stringify(basket))
+
+  let user = localStorage.getItem('currentUser');
+
+  if (user)
+  {
+
+    let x = JSON.parse(localStorage.getItem('users')) || [];
+
+    let userIndex = x.findIndex((obj) => obj.email === user);
+
+    x[userIndex].cart.push(
       {
         id:id,
         item:1,
@@ -67,8 +88,14 @@ let generateFilterOptions = () => {
         img:img
       }
     )
-    console.log(basket);
-   localStorage.setItem('data',JSON.stringify(basket))
+
+    localStorage.setItem('users', JSON.stringify(x));
+
+  }
+  else {
+    alert('Please login to add items to cart');
+    return;
+  }
     
   calculate();
   }
@@ -76,8 +103,11 @@ let generateFilterOptions = () => {
     {
       let cart_icon = document.querySelector('.badge');
   
-      let cart_amount=basket.length
-      cart_icon.innerHTML=cart_amount;
+      // let cart_amount=basket.length
+      // cart_icon.innerHTML=cart_amount;
+
+      cart_icon.innerHTML = JSON.parse(localStorage.getItem('users')).find((x) => x.email === localStorage.getItem('currentUser')).cart.length;
+
     }
  
 
