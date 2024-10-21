@@ -129,8 +129,6 @@ document.getElementById('login-form').addEventListener('submit', async function(
 
     const username = document.getElementById('login-username').value.trim();
     const password = document.getElementById('login-password').value.trim();
-
-    // Clear previous error messages
     document.getElementById('login-username-error').textContent = '';
     document.getElementById('login-password-error').textContent = '';
 
@@ -152,7 +150,7 @@ document.getElementById('login-form').addEventListener('submit', async function(
     }
 
     try {
-        // Fetch users from json-server
+       
         const response = await fetch(`http://localhost:3000?username=${username}&password=${password}`);
         const users = await response.json();
 
