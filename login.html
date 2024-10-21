@@ -92,7 +92,7 @@ document.getElementById('signup-form').addEventListener('submit', async function
         isValid = false;
     }
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailPattern =/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/
     if (email === '') {
         document.getElementById('signup-email-error').textContent = 'Email is required.';
         isValid = false;
@@ -151,42 +151,42 @@ document.getElementById('login-form').addEventListener('submit', async function(
         document.getElementById('login-username-error').textContent = 'Invalid username or password';
     }
 
-    // try {
-    //     // Fetch users from json-server
-    //     const response = await fetch(`http://localhost:3000?username=${username}&password=${password}`);
-    //     const users = await response.json();
+    try {
+        // Fetch users from json-server
+        const response = await fetch(`http://localhost:3000?username=${username}&password=${password}`);
+        const users = await response.json();
 
-    //     // Check if any user was found with the provided credentials
-    //     if (users.length > 0) {
-    //         alert('Login successful');
-    //         window.location.href = 'ecommerce/main.html';
-    //     } else {
-    //         document.getElementById('login-username-error').textContent = 'Invalid username or password';
-    //     }
-    // } catch (error) {
-    //     console.error('Error:', error);
-    //     document.getElementById('login-username-error').textContent = 'Error logging in';
-    // }
+        // Check if any user was found with the provided credentials
+        if (users.length > 0) {
+            alert('Login successful');
+            window.location.href = 'ecommerce/main.html';
+        } else {
+            document.getElementById('login-username-error').textContent = 'Invalid username or password';
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        document.getElementById('login-username-error').textContent = 'Error logging in';
+    }
 
 
-    // // Clear previous error messages
-    // document.getElementById('login-username-error').textContent = '';
-    // document.getElementById('login-password-error').textContent = '';
+    // Clear previous error messages
+    document.getElementById('login-username-error').textContent = '';
+    document.getElementById('login-password-error').textContent = '';
 
-    // try {
-    //     const response = await fetch(`http://localhost:3000/users?username=${username}&password=${password}`);
-    //     const users = await response.json();
+    try {
+        const response = await fetch(`http://localhost:3000/users?username=${username}&password=${password}`);
+        const users = await response.json();
 
-    //     if (users.length > 0) {
-    //         alert('Login successful');
-    //         window.location.href = 'main.html';
-    //     } else {
-    //         document.getElementById('login-username-error').textContent = 'Invalid username or password';
-    //     }
-    // } catch (error) {
-    //     console.error('Error:', error);
-    //     document.getElementById('login-username-error').textContent = 'Error logging in';
-    // }
+        if (users.length > 0) {
+            alert('Login successful');
+            window.location.href = 'main.html';
+        } else {
+            document.getElementById('login-username-error').textContent = 'Invalid username or password';
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        document.getElementById('login-username-error').textContent = 'Error logging in';
+    }
 });
 
 </script>

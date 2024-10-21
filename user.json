@@ -29,6 +29,19 @@
       "username": "saniya",
       "email": "saniya1203.be23@chitkara.edu.in",
       "password": "Saniya@123"
+    },
+    {
+      "id": "ssd",
+      "username": "saniya",
+      "email": "saniya1203.be23@chitkara.edu.in",
+      "password": "Saniya@123"
+    },
+    {
+      "id":"ter",
+      "username": "saniya",
+      "email": "saniya1203.be23@chitkara.edu.in",
+      "password": "Saniya@123"
+
     }
   ]
 }

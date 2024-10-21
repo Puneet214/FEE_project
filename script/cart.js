@@ -18,7 +18,7 @@ let generate_Cart_item = () => {
         <div class="cart_item">
           <p>${name}</p>
           <div class="cart_item_img">
-            <img src='/images/shoes2.jpeg' alt='hello' />
+            <img src='${img}' alt='hello' />
           </div>
 
           <p>${price}</p>

@@ -3,20 +3,20 @@
     {
       "id": "1",
       "name": "Liberty Black Shoes Lacing",
-      "price": 5,
+      "price": 100,
       "rating": 87,
-      "img": "../images/shoes2.jpeg"
+      "img": "shoes2.jpeg"
     },
     {
       "id": "2",
       "name": "Liberty Black Shoes",
       "price": 3445,
       "rating": 89,
-      "img": "/images/shoes2.jpeg"
+      "img": "shoes1.we"
     },
     {
       "id": "3",
-      "name": "Liberty Black Shoes",
+      "name": "Liberty Black white Shoes",
       "price": 3445,
       "rating": 89,
       "img": "/images/shoes2.jpeg"
@@ -100,7 +100,14 @@
     },
     {
       "id": "15",
-      "name": "Libas Mehroon School Lacing",
+      "name": "Libas pro School Lacing",
+      "price": 5000,
+      "rating": 87,
+      "img": "/images/shoes1.webp"
+    },
+    {
+      "id": "16",
+      "name": "Libas pro School Lacing",
       "price": 5000,
       "rating": 87,
       "img": "/images/shoes1.webp"
