@@ -117,12 +117,11 @@ document.getElementById('signup-form').addEventListener('submit', async function
 
         localStorage.setItem('users', JSON.stringify(x));
 
-        alert('Sign up successful');
-        
+        alert('Sign up successful');  
     }
 });
 
-// Handle Login
+
 // Handle Login
 document.getElementById('login-form').addEventListener('submit', async function(event) {
     event.preventDefault();
@@ -138,10 +137,16 @@ document.getElementById('login-form').addEventListener('submit', async function(
 
     if(user)
     {
-        
         alert('Login successful');
-        
         localStorage.setItem('currentUser', user.email);
+        let cart = JSON.parse(localStorage.getItem(user.email + '_cart')) || [];
+        
+        // If the cart is empty, initialize it
+        if (cart.length === 0) {
+            console.log('New user, cart initialized as empty.');
+        } else {
+            console.log('Returning user, cart loaded with previous items:', cart);
+        }
 
     }
     else
@@ -158,26 +163,7 @@ document.getElementById('login-form').addEventListener('submit', async function(
         if (users.length > 0) {
             alert('Login successful');
             window.location.href = 'ecommerce/main.html';
-        } else {
-            document.getElementById('login-username-error').textContent = 'Invalid username or password';
-        }
-    } catch (error) {
-        console.error('Error:', error);
-        document.getElementById('login-username-error').textContent = 'Error logging in';
-    }
 
-
-    // Clear previous error messages
-    document.getElementById('login-username-error').textContent = '';
-    document.getElementById('login-password-error').textContent = '';
-
-    try {
-        const response = await fetch(`http://localhost:3000/users?username=${username}&password=${password}`);
-        const users = await response.json();
-
-        if (users.length > 0) {
-            alert('Login successful');
-            window.location.href = 'main.html';
         } else {
             document.getElementById('login-username-error').textContent = 'Invalid username or password';
         }
