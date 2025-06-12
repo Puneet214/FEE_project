@@ -58,17 +58,7 @@ let generateFilterOptions = () => {
   
   let add_to_cart=(id,name,price,img)=>
   {
-  //   basket.push(
-  //     {
-  //       id:id,
-  //       item:1,
-  //       name:name,
-  //       price:price,
-  //       img:img
-  //     }
-  //   )
-  //   console.log(basket);
-  //  localStorage.setItem('data',JSON.stringify(basket))
+  
 
   let user = localStorage.getItem('currentUser');
 
@@ -128,28 +118,3 @@ async function fetchShoes() {
     }
 }
 
-// Call this function after adding a new shoe
-async function addNewShoe(name, price, rating, img) {
-    const newShoe = { name, price, rating, img };
-
-    try {
-        const response = await fetch('http://localhost:3000/shoes', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(newShoe)
-        });
-
-        if (response.ok) {
-            alert('Shoe added successfully');
-            await fetchShoes(); // Fetch updated data after adding
-        } else {
-            const errorData = await response.json();
-            alert(`Error: ${errorData.message}`);
-        }
-    } catch (error) {
-        console.error('Error adding shoe:', error);
-        alert('Error adding shoe');
-    }
-}

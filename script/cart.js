@@ -1,7 +1,9 @@
-
 let label = document.querySelector('.label');
 let shoppingCart = document.getElementById('shopping-cart')
-let basket = JSON.parse(localStorage.getItem('data')) || []
+// let basket = JSON.parse(localStorage.getItem('data')) || []
+let x = JSON.parse(localStorage.getItem('users')) || [];
+let userIndex = x.findIndex((obj) => obj.email == localStorage.getItem('currentUser'));
+let basket = x[userIndex].cart;
 
 
 let calculate = () => {
@@ -11,6 +13,15 @@ let calculate = () => {
   }
 }
 let generate_Cart_item = () => {
+  
+  var user = localStorage.getItem('currentUser');
+
+  if (user) {
+    let x = JSON.parse(localStorage.getItem('users')) || [];
+    let userIndex = x.findIndex((obj) => obj.email === user);
+    basket = x[userIndex].cart;
+  }
+  
   if (basket.length !== 0) {
     shoppingCart.innerHTML = basket.map((x) => {
       let { id, name, price, item,rating, img } = x;
@@ -18,7 +29,7 @@ let generate_Cart_item = () => {
         <div class="cart_item">
           <p>${name}</p>
           <div class="cart_item_img">
-            <img src='${img}' alt='hello' />
+            <img src='shoes2.jpeg' alt='hello' />
           </div>
 
           <p>${price}</p>
@@ -33,8 +44,13 @@ let generate_Cart_item = () => {
 
 let remove_from_cart=(id)=>
 {
-  basket=basket.filter((x)=>x.id!=id)
-  localStorage.setItem('data',JSON.stringify(basket ))
+  // basket=basket.filter((x)=>x.id!=id)
+  // localStorage.setItem('data',JSON.stringify(basket ))
+
+  x[userIndex].cart = x[userIndex].cart.filter((x) => x.id != id);
+  localStorage.setItem('users', JSON.stringify(x));
+  
+
   calculate();
   generate_Cart_item();
 }

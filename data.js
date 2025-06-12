@@ -1,12 +1,12 @@
 // data.js
 shopItemsData = [
-    // {
-    //   "id": 1,
-    //   "name": "Liberty Black Shoes Lacing",
-    //   "price": 5,
-    //   "rating": 87,
-    //   "img": "shoes2.jpeg"
-    // },
+    {
+      "id": 1,
+      "name": "Liberty Black Shoes Lacing",
+      "price": 5,
+      "rating": 87,
+      "img": "shoes2.jpeg"
+    },
     {
       "id": 2,
       "name": "Liberty Black Shoes",
